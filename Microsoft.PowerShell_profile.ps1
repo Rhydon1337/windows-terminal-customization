@@ -1,8 +1,8 @@
 Import-Module Terminal-Icons
 Import-Module posh-git
 Import-Module PSReadline
-Import-Module oh-my-posh
-Set-PoshPrompt -Theme free-ukraine
+
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH/thecyberden.omp.json" | Invoke-Expression
 
 Set-Alias -Name vscode -Value code # Make sure vscode dir is in your PATH environment variable
 
